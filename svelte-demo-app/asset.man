@@ -1,0 +1,3 @@
+JsLibrary = tribefire.extension.js.model.asset.natures.JsLibrary
+
+$nature = JsLibrary()

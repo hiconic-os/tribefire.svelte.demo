@@ -1,0 +1,63 @@
+@mixin full-screen-paper-padding {
+  padding-left: calc(var(--safeAreaInsetLeft) + var(--paperMenuSpacing));
+  padding-right: calc(var(--safeAreaInsetRight) + var(--paperLangMenuSpacing));
+}
+
+@mixin floating-paper-padding {
+  @media (min-width: $breakpointTwoPaperView) {
+    padding-left: var(--paperHorzPadding);
+    padding-right: var(--paperHorzPadding);
+  }
+}
+
+@mixin paper-colors {
+  background: var(--paperBgColor);
+}
+
+@mixin two-row-table-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+@mixin two-row-table-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+@mixin clamp-text($lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin trello-list-header {
+  flex-grow: 1;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid silver;
+  background: #ddd;
+  color: gray;
+  text-align: center;
+  outline: none !important;
+
+  &.active {
+    border: 1px solid silver;
+    border-bottom: none;
+    background: #f4f4f4;
+  }
+
+  &:not(.active) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: $breakpointTasksAsColumns) {
+    border: none;
+    background: #f4f4f4;
+  }
+}

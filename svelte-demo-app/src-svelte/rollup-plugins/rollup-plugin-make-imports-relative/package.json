@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Braintribe",
+    "email": "help@braintribe.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Convert CommonJS modules to ES2015",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "license": "ISC",
+  "main": "make-imports-relative.js",
+  "name": "rollup-plugin-make-imports-relative",
+  "peerDependencies": {
+    "rollup": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.1.0"
+}

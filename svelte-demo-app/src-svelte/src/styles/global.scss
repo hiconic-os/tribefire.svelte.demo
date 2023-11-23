@@ -1,0 +1,95 @@
+@import './variables.scss';
+
+:global(:root) {
+  --ion-color-primary: var(--primaryColor);
+  --ion-color-primary-rgb: var(--primaryColorRgb);
+  --ion-color-primary-contrast: var(--primaryColorContrast);
+  --ion-color-primary-contrast-rgb: var(--primaryColorContrastRgb);
+  --ion-color-primary-shade: var(--primaryColorShade);
+  --ion-color-primary-tint: var(--primaryColorTint);
+  --ion-font-family: var(--fontFamily);
+}
+
+:global(*) {
+  box-sizing: border-box;
+  font-family: $fontFamily;
+}
+
+:global(html),
+:global(body) {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  // background-image: url(https://www.palaniraja.com/assets/iPadBackgroundTexture-grey.png);
+  background-color: var(--bodyBgColor);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+:global(body) {
+  margin: 0;
+  font-family: var(--fontFamily);
+}
+
+:global(a),
+:global(a):hover,
+:global(a):active {
+  text-decoration: none;
+}
+
+:global(a:hover) {
+  text-decoration: underline;
+}
+
+:global(a:visited) {
+  color: rgb(0, 80, 160);
+}
+
+:global(label) {
+  display: block;
+}
+
+:global(input),
+:global(button),
+:global(select),
+:global(textarea) {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+:global(input:disabled) {
+  color: #ccc;
+}
+
+:global(button) {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+:global(button:disabled) {
+  color: #999;
+}
+
+:global(button:not(:disabled):active) {
+  background-color: #ddd;
+}
+
+:global(button:focus) {
+  border-color: #666;
+}
+
+:global(img) {
+  max-width: none !important;
+}
+
+:global(ion-popover) {
+  --width: auto !important;
+}
