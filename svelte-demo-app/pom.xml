@@ -20,12 +20,8 @@ limitations under the License.
 		<version>[${major}.${minor},${major}.${nextMinor})</version>
 	</parent>
 	<artifactId>svelte-demo-app</artifactId>
-	<version>1.0.3-pc</version>
+	<version>1.0.4</version>
 	<properties>
-		<major>1</major>
-		<minor>0</minor>
-		<nextMinor>1</nextMinor>
-		<revision>1-pc</revision>
 	</properties>
     <licenses>
         <license>
