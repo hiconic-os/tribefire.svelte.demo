@@ -17,7 +17,7 @@ limitations under the License.
 	<parent>
 		<groupId>tribefire.demo.svelte</groupId>
 		<artifactId>parent</artifactId>
-		<version>[${major}.${minor},${major}.${nextMinor})</version>
+		<version>[1.0,1.1)</version>
 	</parent>
 	<artifactId>svelte-demo-app</artifactId>
 	<version>1.0.4</version>
