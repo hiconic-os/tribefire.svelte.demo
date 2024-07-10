@@ -16,7 +16,7 @@ limitations under the License.
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>tribefire.demo.svelte</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>pom</packaging>
 	<properties>
 		<java.version>1.8</java.version>
